@@ -1,0 +1,32 @@
+.telas  {
+    background-image: url(../../imagens/saudacao/Design.svg);
+    height: 500px;
+    background-position:95%;
+    background-repeat: no-repeat; 
+    display: flex;
+    gap: 200px;
+   
+    flex-direction: row;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.telas a {
+    font-family: 'Georama', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    font-style: normal;
+    color:black
+ 
+}
+
+.telas a:hover { 
+    color: #FC5E05;
+    transition: all 0.3s;
+}
+
+
+
