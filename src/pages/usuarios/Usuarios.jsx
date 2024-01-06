@@ -72,7 +72,7 @@ function Usuarios () {
       <Navbar />
     </div>
 
-    
+    <section>
     <div className="usuarios-container"> 
       <Title text="Usuários"/>
       <div className="dados-usuario">
@@ -91,11 +91,8 @@ function Usuarios () {
         </div>
       </div>
     </div>
+    </section>
     </>
-    
-      
-    
-    
   );
 
 }

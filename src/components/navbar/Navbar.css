@@ -4,7 +4,7 @@
 
 nav {
     font-family: 'Georama', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,9 +12,10 @@ nav {
     margin-top: 0%;
     margin-left: 0%;
     margin-bottom: 30px;
-    background-color: #000000;
+    background-color: #141313;
     position: sticky; /*deixa a navbar fixa*/
     top: 0; /*onde vai ficar fixa*/
+    opacity: 0.9;
 }
 
 nav .logo {

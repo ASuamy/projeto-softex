@@ -1,15 +1,20 @@
+
+
 .usuarios-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     font-family: 'Georama', sans-serif;
+    background-image: url(../../imagens/base-tela-laranja.jpg);
+    height: 600px;
+    background-repeat: no-repeat; 
   }
   
   .dados-usuario {    
     width: 80%;
     margin-top: 30px;
-    background-color: rgba(217, 217, 217, 0.2);
+    background-color: rgb(138, 138, 138);
     height: 80vh;
     border-radius: 1%;
     padding: 20px;
