@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import CustomButton from "../../components/button/button";
 import Title from "../../components/Texts/Title/Title";
 import DataTable from "../../components/tabela/tabela";
-import CustomInput from "../../components/input/input";
 import ButtonSalve from "../../components/buttonsalve/ButtonSalve";
 import { Link, NavLink } from "react-router-dom";
 import { DeleteOutline, EditOutlined } from "@mui/icons-material";
@@ -67,23 +66,6 @@ const customRows = [
   // ...
 ];
 
-const andar = [
-  { value: 0, label: "Mezanino", Salas: [] },
-  { value: 1, label: "1º andar", Salas: [101, 102, 103] },
-];
-const salas = [
-  { value: 0, label: '001'},
-  { value: 1, label: '101' }
-  ]
-  const empresas = [
-    { value: 0, label: 'Softex'},
-    { value: 1, label: 'ITBC'}
-    ]
-  
-
-
-
-
 function Salas() {
   return (
     <>
@@ -101,9 +83,30 @@ function Salas() {
           </div>
           <div className="geral-salas">
             <div className="input-salas">
-              <Select id={andar} label="Andar" />
-              <Select id={salas} label="Sala" />
-              <Select id="empresa" label="Empresa" />
+              <Select
+                andar={[
+                  { value: 0, label: "Mezanino" },
+                  { value: 1, label: "1º andar" },
+                  // ...mais opções de andar
+                ]}
+                label="Andar"
+              />
+              <Select
+                sala={[
+                  { value: 101, label: "Sala 101" },
+                  { value: 102, label: "Sala 102" },
+                  // ...mais opções de sala
+                ]}
+                label="Sala"
+              />
+              <Select
+                empresas={[
+                  { value: "company1", label: "Empresa 1" },
+                  { value: "company2", label: "Empresa 2" },
+                  // ...mais opções de empresa
+                ]}
+                label="Empresa"
+              />
               <ButtonSalve text="Assossiar" />
             </div>
             <div className="tabela-salas">

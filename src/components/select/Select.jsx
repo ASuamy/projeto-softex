@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 
 export default function Select({label}) {
  const andar = [
+  const andar = [
     { value: 0, label: 'Mezanino', Salas:[]},
     { value: 1, label: '1º andar', Salas:[101,102,103] }
     ]

@@ -10,12 +10,15 @@ import Cad_salas from "./pages/salas/Cad_salas";
 import Cad_usuarios from "./pages/usuarios/Cad_usuarios";
 import TipoTela from "./pages/Carousel/TipoTela";
 import Carousel from "./pages/Carousel/carousel";
+import Login from "./pages/login/Login";
+import HomeOperador from './pages/home/HomeOperador'
 
 function Rotas() {
   return (
     <div className="Routes">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/salas" element={<Salas />} />
         <Route path="/empresas" element={<Empresas />} />
@@ -27,6 +30,8 @@ function Rotas() {
         <Route path="/telas" element={<TipoTela />} />
         <Route path="/telas/tvTorre" element={<Carousel />} />
         <Route path="/telas/tvRecepcao" element={<Carousel />} />
+        <Route path="/homeOperador" element={<HomeOperador />} />
+
 
       </Routes>
     </div>

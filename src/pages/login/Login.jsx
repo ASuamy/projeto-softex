@@ -14,6 +14,13 @@ const Login = () => {
     e.preventDefault();
     // ... (seu código de login)
   };
+/*
+  const TipoUser= () => {
+    if(setUsername === "admin"){
+
+    }
+  };*/
+    
 
   return (
     <div className="container">
