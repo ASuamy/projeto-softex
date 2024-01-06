@@ -101,6 +101,7 @@ function Midias() {
         <Navbar />
       </div>
 
+      <section className="midia">
       <div className="midia-container">
         <Title text="Mídias" />
         <div className="dados-midia">
@@ -119,6 +120,7 @@ function Midias() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

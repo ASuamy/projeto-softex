@@ -19,6 +19,7 @@ function Cad_usuarios() {
         <Navbar />
       </div>
 
+    <section className="cad-usuario">
       <div className="cad-usuario-container">
         <header>
           <Title text="Cadastro de Usuários" />
@@ -38,6 +39,7 @@ function Cad_usuarios() {
           </section>
         </div>
       </div>
+      </section>
     </>
   );
 }

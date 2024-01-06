@@ -17,7 +17,7 @@ export default function TipoTela() {
     <section className="telas">
       <div className="recepcao">
     <Box width='300px'>
-      <Card>
+      <Card >
         <CardActionArea>
         <CardMedia
           component='img'

@@ -116,6 +116,8 @@ function Empresas() {
       <div className="NavBar">
         <Navbar />
       </div>
+
+      <section className="empresa">
       <div className="empresa-container">
         <Title text="Empresas" />
         <div className="dados-empresa">
@@ -134,6 +136,7 @@ function Empresas() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

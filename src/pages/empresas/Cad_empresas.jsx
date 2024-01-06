@@ -12,6 +12,9 @@ export default function Cad_empresas() {
     <>
       <div className="NavBar">
         <Navbar />
+        </div>
+
+        <section className="cad-empresa">
         <div className="cad-empresa-container">
           <header>
             <Title text="Cadastro de Empresas" />
@@ -31,7 +34,8 @@ export default function Cad_empresas() {
             </section>
           </div>
         </div>
-      </div>
+        </section>
+      
     </>
   );
 }

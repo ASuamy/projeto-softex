@@ -1,29 +1,41 @@
-
-
 .usuarios-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     font-family: 'Georama', sans-serif;
-    background-image: url(../../imagens/base-tela-laranja.jpg);
-    height: 600px;
-    background-repeat: no-repeat; 
+      background-image: url('../../imagens/laranja2.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      width: 100vw;
+         
   }
+  
+
   
   .dados-usuario {    
     width: 80%;
     margin-top: 30px;
-    background-color: rgb(138, 138, 138);
-    height: 80vh;
+    background-color: rgb(138,138,138)
+    ;
+    height: 80%;
     border-radius: 1%;
     padding: 20px;
     margin-left: 20px;
+  
   }
 
 
   .tabela-usuario {
     padding: 5px;
+    width: 80% 
   }
 
-  
+  @media(max-width: 992px){
+    .tabela_usuario {
+      padding: 5px;
+      width: 70%;
+    }
+
+  }

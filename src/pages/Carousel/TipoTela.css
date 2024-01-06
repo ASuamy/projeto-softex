@@ -1,12 +1,11 @@
 .telas {
-    background-image: url(../../imagens/base-tela-laranja.jpg);
-    height: 600px;
-    background-repeat: no-repeat; 
-    
-    
+    background-image: url('../../imagens/laranja2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+       
 }
-
-
 
  .telas a{
     text-decoration: none;
@@ -36,7 +35,8 @@
         flex-direction: column;
         margin-top: auto;
         align-items: center;
-        display: flex;
+        display: fixed;
+        
         
     }
 
@@ -44,3 +44,4 @@
         margin: 10px;
     }
 }
+

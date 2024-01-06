@@ -73,7 +73,8 @@ function Salas() {
       <div className="NavBar">
         <Navbar />
       </div>
-
+      
+      <section className="salas">
       <div className="salas-container">
         <Title text="Salas" />
         <div className="dados-salas">
@@ -100,6 +101,7 @@ function Salas() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

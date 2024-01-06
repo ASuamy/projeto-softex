@@ -1,3 +1,11 @@
+.cad-empresa{
+  background-image: url('../../imagens/laranja2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+}
+
 
 .cad-empresa-container {
     display: flex;
@@ -10,7 +18,7 @@
   .cad-dados-empresa {    
     width: 80%;
     margin-top: 30px;
-    background-color: rgba(217, 217, 217, 0.2);
+    background-color: rgb(138,138,138);
     height: 90%;
     border-radius: 1%;
     padding: 20px;
