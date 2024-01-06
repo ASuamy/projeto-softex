@@ -20,7 +20,7 @@ export default function Cad_empresas() {
             <Title text="Cadastro de Empresas" />
           </header>
           <div className="cad-dados-empresa">
-            <section>
+            <div>
               <form>
                 <CustomInput type="text" label="CNPJ" />
                 <CustomInput type="text" label="Razão social" />
@@ -31,7 +31,7 @@ export default function Cad_empresas() {
                 <Label text1="*Formato PNG" text2="*até 50MB" /><br/>
                 <ButtonSalve text="SALVAR" />
               </form>
-            </section>
+            </div>
           </div>
         </div>
         </section>

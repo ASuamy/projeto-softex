@@ -24,7 +24,8 @@ function Cad_midias() {
           <Title text="Cadastro de Mídias" />
         </header>
         <div className="cad-dados-midia">
-          <section>
+          <div>
+            <form>
             <CustomInput label="Titulo" />
             <CustomInput label="Descrição" />
             <SubTitle text="Tipo de Mídia" />
@@ -36,7 +37,8 @@ function Cad_midias() {
               <ResponsiveDatePickers />
             </div>
             <ButtonSalve text="SALVAR" />
-          </section>
+            </form>
+          </div>
         </div>
       </div>
       </section>

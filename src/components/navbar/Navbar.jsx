@@ -44,6 +44,10 @@ const Navbar = () => {
         <li>
           <NavLink to="/midias">Mídias</NavLink>
         </li>
+        <li>
+          <NavLink to="/">Logout</NavLink>
+        </li>
+
       </ul>
     </nav>
   );
