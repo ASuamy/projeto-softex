@@ -4,20 +4,10 @@ import Autocomplete from '@mui/material/Autocomplete';
 import Stack from '@mui/material/Stack';
 
 export default function Select({label}) {
- const andar = [
   const andar = [
     { value: 0, label: 'Mezanino', Salas:[]},
     { value: 1, label: '1º andar', Salas:[101,102,103] }
     ]
-    const salas = [
-      { value: 0, label: '001'},
-      { value: 1, label: '101' }
-      ]
-      const empresas = [
-        { value: 0, label: 'Softex'},
-        { value: 1, label: 'ITBC'}
-        ]
-      
 
   const defaultProps = {
     options: andar,
