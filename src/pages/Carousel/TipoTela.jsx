@@ -23,7 +23,6 @@ export default function TipoTela() {
         <Navbar />
       </div>
 
-<<<<<<< HEAD
     <section className="telas">
       <div className="recepcao">
     <Box width='300px'>
@@ -54,41 +53,6 @@ export default function TipoTela() {
       </Card>
     </Box>
     </div>
-=======
-      <section className="telas">
-        <div className="recepcao">
-          <Box width="300px">
-            <Card>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="unsplash image"
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    Recepção
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Sunt eum aut voluptatem fugit sit aliquid ipsa! Autem,
-                    voluptatum dicta vitae perferendis consequatur adipisci,
-                    eius reiciendis aut labore eaque enim quam.
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">
-                    <NavLink to="/telas/tvRecepcao" target="blank">
-                      Selecionar
-                    </NavLink>
-                  </Button>
-                </CardActions>
-              </CardActionArea>
-            </Card>
-          </Box>
-        </div>
->>>>>>> 01afcf4f2fc3bb4b055db6a979776af9af19e9dd
 
         <div className="torre">
           <Box width="300px">

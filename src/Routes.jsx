@@ -17,7 +17,7 @@ function Rotas() {
   return (
     <div className="Routes">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/usuarios" element={<Usuarios />} />
         <Route path="/salas" element={<Salas />} />
