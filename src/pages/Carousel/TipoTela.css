@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+.telas {
+    background-image: url('../../imagens/laranja2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+       
+}
+
+=======
 *{
     margin: 0;
     
@@ -14,6 +25,7 @@
 }
 
 
+>>>>>>> 01afcf4f2fc3bb4b055db6a979776af9af19e9dd
  .telas a{
     text-decoration: none;
     font-family: 'Georama', sans-serif;
@@ -34,7 +46,8 @@
         flex-direction: column;
         margin-top: auto;
         align-items: center;
-        display: flex;
+        display: fixed;
+        
         
     }
 
@@ -42,3 +55,4 @@
     
     }
 }
+

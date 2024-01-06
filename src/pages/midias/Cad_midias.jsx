@@ -18,6 +18,7 @@ function Cad_midias() {
         <Navbar />
       </div>
 
+    <section className="cad-midia">
       <div className="cad-midia-container">
         <header>
           <Title text="Cadastro de Mídias" />
@@ -40,6 +41,7 @@ function Cad_midias() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
