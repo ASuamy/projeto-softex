@@ -4,7 +4,8 @@ import { DataGrid } from '@mui/x-data-grid';
 
 const DataTable = ({ rows, columns, handleEdit, handleDelete }) => {
   return (
-    <div style={{ height: 'auto', width: '100%' }}>
+    <container className="tabela">
+    <div style={{ height: 'auto', width: 'auto'}}>
       <DataGrid
         rows={rows}
         columns={columns}
@@ -17,6 +18,7 @@ const DataTable = ({ rows, columns, handleEdit, handleDelete }) => {
         checkboxSelection
       />
     </div>
+    </container>
   );
 };
 
