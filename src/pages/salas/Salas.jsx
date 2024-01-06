@@ -67,6 +67,23 @@ const customRows = [
   // ...
 ];
 
+const andar = [
+  { value: 0, label: "Mezanino", Salas: [] },
+  { value: 1, label: "1º andar", Salas: [101, 102, 103] },
+];
+const salas = [
+  { value: 0, label: '001'},
+  { value: 1, label: '101' }
+  ]
+  const empresas = [
+    { value: 0, label: 'Softex'},
+    { value: 1, label: 'ITBC'}
+    ]
+  
+
+
+
+
 function Salas() {
   return (
     <>
@@ -84,8 +101,8 @@ function Salas() {
           </div>
           <div className="geral-salas">
             <div className="input-salas">
-              <Select id="andar" label="Andar" />
-              <Select id="sala" label="Sala" />
+              <Select id={andar} label="Andar" />
+              <Select id={salas} label="Sala" />
               <Select id="empresa" label="Empresa" />
               <ButtonSalve text="Assossiar" />
             </div>

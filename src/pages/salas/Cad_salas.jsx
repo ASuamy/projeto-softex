@@ -6,6 +6,7 @@ import "./Cad_salas.css";
 import Navbar from "../../components/navbar/Navbar";
 
 export default function Cad_salas() {
+
   return (
     <>
       <div className="NavBar">
@@ -17,11 +18,13 @@ export default function Cad_salas() {
           <Title text="Cadastro de Salas" />
         </header>
         <div className="cad-dados-salas">
-          <section>
-            <CustomInput type="text" label="Andar" />
-            <CustomInput type="text" label="Salas" />
-            <ButtonSalve text="SALVAR" />
-          </section>
+          <div>
+            <form>
+              <CustomInput type="text" label="Andar" />
+              <CustomInput type="text" label="Salas" />
+              <ButtonSalve text="SALVAR" />
+            </form>
+          </div>
         </div>
       </div>
     </>

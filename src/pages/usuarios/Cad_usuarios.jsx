@@ -24,7 +24,7 @@ function Cad_usuarios() {
           <Title text="Cadastro de Usuários" />
         </header>
         <div className="cad-dados-usuario">
-          <section>
+          <div>
             <form>
               <CustomInput type="text" label="CPF" onChange={formatarCPF} />
               <CustomInput type="text" label="Nome Completo" />
@@ -35,7 +35,7 @@ function Cad_usuarios() {
               <CustomInput type="password" label="Senha" />
               <ButtonSalve text="SALVAR" />
             </form>
-          </section>
+          </div>
         </div>
       </div>
     </>

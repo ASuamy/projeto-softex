@@ -1,11 +1,17 @@
-.telas {
-    background-image: url(../../imagens/base-tela-laranja.jpg);
-    height: 600px;
-    background-repeat: no-repeat; 
-    
+*{
+    margin: 0;
     
 }
 
+.telas {
+    background-image: url(../../imagens/base-tela-laranja.jpg);
+    background-repeat: no-repeat; 
+    display: flex; 
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+   
+}
 
 
  .telas a{
@@ -13,7 +19,7 @@
     font-family: 'Georama', sans-serif;
     font-size: 0.8rem;
     font-style: normal;
-    color:black
+    color:black;
 }
 
  a:hover { 
@@ -22,14 +28,6 @@
 }
 
 
-.telas{
-
-    display: flex; 
-    flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center;
-   
-}
 
 @media (max-width: 992px) {
     .telas{
@@ -41,6 +39,6 @@
     }
 
     .telas div{
-        margin: 10px;
+    
     }
 }
