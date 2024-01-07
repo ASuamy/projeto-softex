@@ -12,15 +12,16 @@
     text-align: center;
     align-items: center;
     font-family: 'Georama', sans-serif;
+    margin-top: 10px;
   }
   
   .dados-midia {    
     width: 80%;
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: rgb(138,138,138);
-    height: 80vh;
+    height: 88%;
     border-radius: 1%;
-    padding: 20px;
+    padding: 10px;
     margin-left: 20px;
   }
 

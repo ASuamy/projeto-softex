@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
+import './tabela.css'
 
 
 const DataTable = ({ rows, columns, handleEdit, handleDelete }) => {
@@ -16,6 +17,7 @@ const DataTable = ({ rows, columns, handleEdit, handleDelete }) => {
         }}
         pageSizeOptions={[5, 10]}
         checkboxSelection
+        getRowClassName={(params) => 'custom-row'}
       />
     </div>
     </container>

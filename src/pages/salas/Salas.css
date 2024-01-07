@@ -6,26 +6,22 @@
   width: 100vw;
 }
 
-
-
 .salas-container {
-  /* Estilos para o contêiner principal */
-  /* Por exemplo: */
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   font-family: 'Georama', sans-serif;
-  
+  margin-top: 10px;
 }
 
 .dados-salas {    
   width: 80%;
-  margin-top: 30px;
+  margin-top: 25px;
   background-color: rgb(138,138,138);
-  height: 80%;
+  height: 88%;
   border-radius: 1%;
-  padding: 20px;
+  padding: 10px;
   margin-left: 20px;
 }
 

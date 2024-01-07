@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import CustomButton from '../../components/button/button'
 import DataTable from '../../components/tabela/tabela'
 import Title from '../../components/Texts/Title/Title';
-import {Link, NavLink} from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
 import './Usuarios.css'
@@ -23,8 +23,10 @@ const handleDelete = (id) => {
 };
 
 const customColumns = [
-  { field: 'id', headerName: 'CPF', type: 'number', width: 140,
-  valueFormatter: (params) => formatarCPF(params.value.toString()) },
+  {
+    field: 'id', headerName: 'CPF', type: 'number', width: 140,
+    valueFormatter: (params) => formatarCPF(params.value.toString())
+  },
   { field: 'fullName', headerName: 'Nome Completo', width: 250 },
   { field: 'email', headerName: 'E-mail', width: 200 },
   { field: 'tp', headerName: 'TP', width: 80 },
@@ -35,7 +37,11 @@ const customColumns = [
     width: 50,
     sortable: false,
     renderCell: (params) => (
-      <IconButton aria-label="edit" size="small" onClick={() => handleEdit(params.row.id)}>
+      <IconButton 
+      aria-label="edit" 
+      size="small" 
+      onClick={() => handleEdit(params.row.id)} 
+      style={{ color: 'white' }}>
         <EditOutlined />
       </IconButton>
     ),
@@ -46,7 +52,11 @@ const customColumns = [
     width: 50,
     sortable: false,
     renderCell: (params) => (
-      <IconButton aria-label="delete" size="small" onClick={() => handleDelete(params.row.id)}>
+      <IconButton 
+      aria-label="delete" 
+      size="small" 
+      onClick={() => handleDelete(params.row.id)} 
+      style={{ color: 'white' }}>
         <DeleteOutline />
       </IconButton>
     ),
@@ -54,44 +64,44 @@ const customColumns = [
 ];
 
 const customRows = [
-    { id: 12345678900, fullName: 'Silvana Paiva', email: 'sil@gmail.com', tp: 'ADM', userName: 'silpaiva' },
-    { id: 87654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-    { id: 87654321891, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-    { id: 97654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-    { id: 89654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-    // Adicione mais usuários conforme necessário
-    // Preencha com os dados necessários do banco de dados
+  { id: 12345678900, fullName: 'Silvana Paiva', email: 'sil@gmail.com', tp: 'ADM', userName: 'silpaiva' },
+  { id: 87654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
+  { id: 87654321891, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
+  { id: 97654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
+  { id: 89654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
+  // Adicione mais usuários conforme necessário
+  // Preencha com os dados necessários do banco de dados
 ];
-  
 
-function Usuarios () {
+
+function Usuarios() {
 
   return (
     <>
-    <div className="NavBar">
-      <Navbar />
-    </div>
-
-    <section>
-    <div className="usuarios-container"> 
-      <Title text="Usuários"/>
-      <div className="dados-usuario">
-        <div className="button-usuario">
-          <NavLink to="/usuarios/cadastrousuarios">
-            <CustomButton>ADICIONAR</CustomButton>
-          </NavLink>
-        </div>
-        <div className="tabela-usuario">
-          <DataTable
-            rows={customRows}
-            columns={customColumns}
-            handleEdit={handleEdit}
-            handleDelete={handleDelete}
-          />
-        </div>
+      <div className="NavBar">
+        <Navbar />
       </div>
-    </div>
-    </section>
+
+      <section className='usuarios'>
+        <div className="usuarios-container">
+          <Title text="Usuários" />
+          <div className="dados-usuario">
+            <div className="button-usuario">
+              <NavLink to="/usuarios/cadastrousuarios">
+                <CustomButton>ADICIONAR</CustomButton>
+              </NavLink>
+            </div>
+            <div className="tabela-usuario">
+              <DataTable
+                rows={customRows}
+                columns={customColumns}
+                handleEdit={handleEdit}
+                handleDelete={handleDelete}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 

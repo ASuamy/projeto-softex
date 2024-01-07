@@ -12,7 +12,7 @@ export default function Cad_salas() {
       <div className="NavBar">
         <Navbar />
       </div>
-
+      <section className="cad-sala">
       <div className="cad-salas-container">
         <header>
           <Title text="Cadastro de Salas" />
@@ -27,6 +27,7 @@ export default function Cad_salas() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

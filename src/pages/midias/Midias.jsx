@@ -32,6 +32,7 @@ const customColumns = [
         aria-label="edit"
         size="small"
         onClick={() => handleEdit(params.row.id)}
+        style={{ color: 'white' }}
       >
         <EditOutlined />
       </IconButton>
@@ -47,6 +48,7 @@ const customColumns = [
         aria-label="delete"
         size="small"
         onClick={() => handleDelete(params.row.id)}
+        style={{ color: 'white' }}
       >
         <DeleteOutline />
       </IconButton>
