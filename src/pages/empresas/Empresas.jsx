@@ -5,7 +5,7 @@ import Title from "../../components/Texts/Title/Title";
 import { Link, NavLink } from "react-router-dom";
 import { DeleteOutline, EditOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import "./Empresas.css";
+import "../Styles/stylesPages.css";
 import Navbar from "../../components/navbar/Navbar";
 
 function formatarCNPJ(cnpj) {
@@ -53,7 +53,6 @@ const customColumns = [
         aria-label="edit"
         size="small"
         onClick={() => handleEdit(params.row.id)}
-        style={{ color: 'white' }}
       >
         <EditOutlined />
       </IconButton>
@@ -69,7 +68,6 @@ const customColumns = [
         aria-label="delete"
         size="small"
         onClick={() => handleDelete(params.row.id)}
-        style={{ color: 'white' }}
       >
         <DeleteOutline />
       </IconButton>
@@ -118,16 +116,15 @@ function Empresas() {
       <div className="NavBar">
         <Navbar />
       </div>
-
-      <section className="empresa">
+      <div className="empresa">
       <div className="empresa-container">
         <Title text="Empresas" />
         <div className="dados-empresa">
-          <div className="button-empresa">
-            <NavLink to="/empresas/cadastroempresas">
-              <CustomButton>ADICIONAR</CustomButton>
-            </NavLink>
-          </div>
+        <CustomButton className="buttonAdd">
+                <NavLink to="/empresas/cadastroempresas" className='buttonAdd'>
+                  ADICIONAR
+                  </NavLink>
+                  </CustomButton>
           <div className="tabela-empresa">
             <DataTable
               rows={customRows}
@@ -138,7 +135,7 @@ function Empresas() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </>
   );
 }

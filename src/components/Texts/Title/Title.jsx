@@ -1,9 +1,10 @@
 import React from 'react'
+import './title.css'
 
 export default function Title({text}) {
   return (
     <div>
-        <h1 style={{textAlign:'center'}}>{text}</h1>
+        <div className='titulo'>{text}</div>
       
     </div>
   )

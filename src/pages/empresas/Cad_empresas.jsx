@@ -4,7 +4,7 @@ import Title from "../../components/Texts/Title/Title";
 import ButtonUpload from "../../components/buttonupload/ButtonUpload";
 import Label from "../../components/Texts/label/Label";
 import CustomInput from "../../components/input/input";
-import "./Cad_empresas.css";
+import "../Styles/stylesCadastros.css";
 import Navbar from "../../components/navbar/Navbar";
 
 export default function Cad_empresas() {
@@ -14,7 +14,7 @@ export default function Cad_empresas() {
         <Navbar />
         </div>
 
-        <section className="cad-empresa">
+        <div className="cad-empresa">
         <div className="cad-empresa-container">
           <header>
             <Title text="Cadastro de Empresas" />
@@ -27,14 +27,14 @@ export default function Cad_empresas() {
                 <CustomInput type="text" label="Nome fantasia" />
                 <CustomInput type="password" label="Senha" />
                 <CustomInput type="text" label="Contato" />
-                <ButtonUpload label="Anexar Logomarca" className="buttonLogo" />
+                <ButtonUpload label="Anexar Logo" className="buttonLogo" />
                 <Label text1="*Formato PNG" text2="*até 50MB" /><br/>
                 <ButtonSalve text="SALVAR" />
               </form>
             </div>
           </div>
         </div>
-        </section>
+        </div>
       
     </>
   );

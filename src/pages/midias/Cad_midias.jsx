@@ -8,7 +8,7 @@ import CheckboxMidia from "../../components/CheckBox/CheckBoxMidia";
 import Subtitle from "../../components/Texts/Subtitle/Subtitle";
 import ResponsiveDatePickers from "../../components/Calendar/Calendar";
 import CustomInput from "../../components/input/input";
-import "./Cad_midias.css";
+import "../Styles/stylesCadastros.css";
 import Navbar from "../../components/navbar/Navbar";
 
 function Cad_midias() {
@@ -18,7 +18,7 @@ function Cad_midias() {
         <Navbar />
       </div>
 
-    <section className="cad-midia">
+    <div className="cad-midia">
       <div className="cad-midia-container">
         <header>
           <Title text="Cadastro de Mídias" />
@@ -41,7 +41,7 @@ function Cad_midias() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </>
   );
 }

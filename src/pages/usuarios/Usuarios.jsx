@@ -5,7 +5,7 @@ import Title from '../../components/Texts/Title/Title';
 import { Link, NavLink } from 'react-router-dom'
 import { DeleteOutline, EditOutlined } from '@mui/icons-material';
 import { IconButton } from '@mui/material';
-import './Usuarios.css'
+import "../Styles/stylesPages.css";
 import Navbar from '../../components/navbar/Navbar';
 
 
@@ -41,7 +41,7 @@ const customColumns = [
       aria-label="edit" 
       size="small" 
       onClick={() => handleEdit(params.row.id)} 
-      style={{ color: 'white' }}>
+      >
         <EditOutlined />
       </IconButton>
     ),
@@ -56,7 +56,7 @@ const customColumns = [
       aria-label="delete" 
       size="small" 
       onClick={() => handleDelete(params.row.id)} 
-      style={{ color: 'white' }}>
+      >
         <DeleteOutline />
       </IconButton>
     ),
@@ -82,15 +82,15 @@ function Usuarios() {
         <Navbar />
       </div>
 
-      <section className='usuarios'>
+      <div className='usuarios'>
         <div className="usuarios-container">
-          <Title text="Usuários" />
+          <Title text="Usuários"/>
           <div className="dados-usuario">
-            <div className="button-usuario">
-              <NavLink to="/usuarios/cadastrousuarios">
-                <CustomButton>ADICIONAR</CustomButton>
-              </NavLink>
-            </div>
+                <CustomButton className="buttonAdd">
+                <NavLink to="/usuarios/cadastrousuarios" className='buttonAdd'>
+                  ADICIONAR
+                  </NavLink>
+                  </CustomButton>
             <div className="tabela-usuario">
               <DataTable
                 rows={customRows}
@@ -101,7 +101,7 @@ function Usuarios() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 

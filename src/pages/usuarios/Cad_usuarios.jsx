@@ -4,7 +4,7 @@ import Title from "../../components/Texts/Title/Title";
 import CheckboxUser from "../../components/CheckBox/CheckBox";
 import Subtitle from "../../components/Texts/Subtitle/Subtitle";
 import CustomInput from "../../components/input/input";
-import "./Cad_usuarios.css";
+import "../Styles/stylesCadastros.css";
 import Navbar from "../../components/navbar/Navbar";
 
 function formatarCPF(cpf) {
@@ -19,7 +19,7 @@ function Cad_usuarios() {
         <Navbar />
       </div>
 
-    <section className="cad-usuario">
+    <div className="cad-usuario">
       <div className="cad-usuario-container">
         <header>
           <Title text="Cadastro de Usuários" />
@@ -39,7 +39,7 @@ function Cad_usuarios() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </>
   );
 }

@@ -1,0 +1,39 @@
+.cad-usuario, .cad-sala, .cad-midia, .cad-empresa {
+    background-image: url('../../imagens/laranja2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 91vh;
+  }
+  
+  .cad-usuario-container,.cad-salas-container, .cad-midia-container, .cad-empresa-container  {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      font-family: 'Georama', sans-serif;
+    }
+    
+    .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
+      width: 60%;
+      margin-top: 25px;
+      background-color: #eee;
+      height: 88%;
+      border-radius: 1%;
+      padding: 10px;
+      margin-left: 20px;
+      min-width: 350px;
+
+    }  
+    .data-pick {
+        display: flex;
+        justify-content: space-around;
+      }
+      @media(max-width:992px){
+        .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
+          margin-top: 0;
+        }
+        .titulo{
+          font-size: 10px;
+        }
+      }

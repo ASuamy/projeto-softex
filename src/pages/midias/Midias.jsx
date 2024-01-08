@@ -5,7 +5,7 @@ import Title from "../../components/Texts/Title/Title";
 import { Link, NavLink } from "react-router-dom";
 import { DeleteOutline, EditOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import "./Midias.css";
+import "../Styles/stylesPages.css";
 import Navbar from "../../components/navbar/Navbar";
 
 const handleEdit = (id) => {
@@ -32,7 +32,6 @@ const customColumns = [
         aria-label="edit"
         size="small"
         onClick={() => handleEdit(params.row.id)}
-        style={{ color: 'white' }}
       >
         <EditOutlined />
       </IconButton>
@@ -48,7 +47,6 @@ const customColumns = [
         aria-label="delete"
         size="small"
         onClick={() => handleDelete(params.row.id)}
-        style={{ color: 'white' }}
       >
         <DeleteOutline />
       </IconButton>
@@ -103,15 +101,15 @@ function Midias() {
         <Navbar />
       </div>
 
-      <section className="midia">
+      <div className="midia">
       <div className="midia-container">
         <Title text="Mídias" />
         <div className="dados-midia">
-          <div className="button-midia">
-            <NavLink to="/midias/cadastromidias">
-              <CustomButton>ADICIONAR</CustomButton>
-            </NavLink>
-          </div>
+        <CustomButton className="buttonAdd">
+                <NavLink to="/midias/cadastromidias" className='buttonAdd'>
+                  ADICIONAR
+                  </NavLink>
+                  </CustomButton>
           <div className="tabela-midia">
             <DataTable
               rows={customRows}
@@ -122,7 +120,7 @@ function Midias() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </>
   );
 }

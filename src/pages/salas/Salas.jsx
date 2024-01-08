@@ -6,7 +6,7 @@ import ButtonSalve from "../../components/buttonsalve/ButtonSalve";
 import { Link, NavLink } from "react-router-dom";
 import { DeleteOutline, EditOutlined } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
-import "./Salas.css";
+import "../Styles/stylesPages.css";
 import Navbar from "../../components/navbar/Navbar";
 import Select from "../../components/select/Select";
 
@@ -32,7 +32,6 @@ const customColumns = [
         aria-label="edit"
         size="small"
         onClick={() => handleEdit(params.row.id)}
-        style={{ color: 'white' }}
       >
         <EditOutlined />
       </IconButton>
@@ -48,7 +47,6 @@ const customColumns = [
         aria-label="delete"
         size="small"
         onClick={() => handleDelete(params.row.id)}
-        style={{ color: 'white' }}
       >
         <DeleteOutline />
       </IconButton>
@@ -75,15 +73,15 @@ function Salas() {
         <Navbar />
       </div>
       
-      <section className="salas">
+      <div className="salas">
       <div className="salas-container">
         <Title text="Salas" />
         <div className="dados-salas">
-          <div className="button-salas">
-            <NavLink to="/salas/cadastrosalas">
-              <CustomButton>ADICIONAR</CustomButton>
-            </NavLink>
-          </div>
+        <CustomButton >
+                <NavLink to="/salas/cadastrosalas" className='buttonAdd'>
+                  ADICIONAR
+                  </NavLink>
+                  </CustomButton>
           <div className="geral-salas">
             <div className="input-salas">
               <Select
@@ -123,7 +121,7 @@ function Salas() {
           </div>
         </div>
       </div>
-      </section>
+      </div>
     </>
   );
 }
