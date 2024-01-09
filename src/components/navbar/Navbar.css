@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #141313;
+    background-color: #ffffff;
     position: sticky; /*deixa a navbar fixa*/
     top: 0; /*onde vai ficar fixa*/
     opacity: 0.9;
@@ -46,7 +46,7 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: #ffff;
+    color: black;
     padding: 0.5rem;
     margin: 0 0.8rem;
     border-radius: 0.5rem;

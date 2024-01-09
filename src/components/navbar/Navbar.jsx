@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import Logo_softex from "../logos/Logo_softex";
 import Logo_itbc from "../logos/logo_itbc";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -45,7 +46,9 @@ const Navbar = () => {
           <NavLink to="/midias">Mídias</NavLink>
         </li>
         <li>
-          <NavLink to="/">Logout</NavLink>
+          <NavLink to="/">
+            <LogoutIcon />
+          </NavLink>
         </li>
 
       </ul>

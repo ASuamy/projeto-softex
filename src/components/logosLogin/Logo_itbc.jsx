@@ -2,13 +2,13 @@ import React from 'react'
 import itbc from '../../imagens/logos/LOGO-ITBC.svg'
 import './Logo_itbc.css'
 
-const Logo_itbc = () => {
+const LogoLogin_itbc = () => {
   return (
-    <div className='logo-itbc'>
+    <div className='logoLogin-itbc'>
       <img src={itbc} alt='logomarca itbc' />
     </div>
   )
 }
 
-export default Logo_itbc
+export default LogoLogin_itbc
  

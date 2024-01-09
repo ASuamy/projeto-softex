@@ -1,58 +1,48 @@
-/* Login.css */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../../imagens/fundo.tela.b.jpg');
-    background-size: cover;
-    background-position: center; 
-  }
-  .imagem{
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 40%;
-    
-
-  }
-  .logoSoftex{
-    background-image: url(../../imagens/logos/logoSoftex.jpg);
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-
-}
-  .logoITBC{
-   background-color: aqua;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../imagens/fundo.tela.b.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-  .div-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(248, 213, 168, 0.62);
-    border-radius: 10px;
-    max-width: 600px; /* Define a largura máxima do contêiner */
-    width: 100%; 
-    height: 60%;
-  }
+.imagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
+.div-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: rgba(248, 213, 168, 0.62);
+  border-radius: 10px;
+  max-width: 700px;
+  width: 100%;
+  height: 70%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+}
+
+
+.textLogin {
+  font-size: small;
+  padding-top: 1%;
+}
+
+
+/* Adicione media queries para tornar o layout responsivo */
+@media screen and (max-width: 992px) {
   .form-container {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-   margin-top: 100px;
-   margin-right: 40px;
+    max-width: 90%;
+    /* Reduz a largura máxima para telas menores */
   }
-
-  
-  /* Adicione media queries para tornar o layout responsivo */
-  @media screen and (max-width: 992px) {
-    .form-container {
-      max-width: 90%; /* Reduz a largura máxima para telas menores */
-    }
-  }
-  
-  
+}

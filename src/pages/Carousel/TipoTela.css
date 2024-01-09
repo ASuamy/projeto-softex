@@ -1,9 +1,7 @@
 .telas {
-    background-image: url('../../imagens/laranja2.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100vw;  
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
 }
 
  .telas a{

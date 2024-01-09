@@ -1,5 +1,5 @@
-.usuarios, .salas, .midia, .empresa {
-    background-image: url('../../imagens/laranja2.png');
+.usuarios, .salas, .midia, .empresa, .telas {
+    background-image: url('../../imagens/fundo.tela.b.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +19,7 @@
   .dados-usuario,.dados-salas, .dados-midia,.dados-empresa  {
     width: 70%;
     margin-top: 10px;
-    background-color: #eee;
+    background-color: RGBA(217, 217, 217, 0.5);
     height: 100%;
     border-radius: 1%;
     padding: 10px;

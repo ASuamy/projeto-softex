@@ -2,12 +2,12 @@ import React from 'react'
 import softex from '../../imagens/logos/LogoSoftex.png'
 import './Logo_softex.css'
 
-const Logo_softex = () => {
+const LogoLogin_softex = () => {
   return (
-    <div className='logo-softex'>
+    <div className='logoLogin-softex'>
       <img src={softex} alt='logomarca softex' />
     </div>
   )
 }
 
-export default Logo_softex
+export default LogoLogin_softex

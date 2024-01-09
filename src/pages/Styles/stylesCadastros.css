@@ -1,5 +1,5 @@
 .cad-usuario, .cad-sala, .cad-midia, .cad-empresa {
-    background-image: url('../../imagens/laranja2.png');
+    background-image: url('../../imagens/fundo.tela.b.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,7 +17,7 @@
     .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
       width: 60%;
       margin-top: 25px;
-      background-color: #eee;
+      background-color: RGBA(217, 217, 217, 0.5);
       height: 88%;
       border-radius: 1%;
       padding: 10px;

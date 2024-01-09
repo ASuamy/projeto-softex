@@ -6,6 +6,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { NavLink } from "react-router-dom";
+import LogoLogin_softex from '../../components/logosLogin/Logo_softex';
+import LogoLogin_itbc from '../../components/logosLogin/Logo_itbc';
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -20,14 +22,14 @@ const Login = () => {
 
   const handleAdminChange = (event) => {
     setIsAdmin(event.target.value);
-    };
-    
+  };
+
   return (
     <div className="container">
       <div className="div-container">
         <div className="imagem">
-          <div className="logoSoftex"></div>
-          <div className="logoITBC"></div>
+          <LogoLogin_softex />
+          <LogoLogin_itbc />
         </div>
         <div className="form-container">
           {loggedIn ? (
@@ -48,8 +50,6 @@ const Login = () => {
                   ),
                 }}
               />
-
-              <br />
               <CustomInput
                 type="password"
                 label="Senha"
@@ -64,6 +64,8 @@ const Login = () => {
                   ),
                 }}
               />
+              <br />
+              <p className="text">Esqueceu senha?</p>
               <br />
               <NavLink to="/Home">
                 <ButtonSalve type="submit" text="Entrar" href="/Home" />
