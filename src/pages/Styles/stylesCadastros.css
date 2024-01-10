@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 91vh;
+    height: 90vh;
   }
   
   .cad-usuario-container,.cad-salas-container, .cad-midia-container, .cad-empresa-container  {
@@ -16,7 +16,6 @@
     
     .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
       width: 60%;
-      margin-top: 25px;
       background-color: RGBA(217, 217, 217, 0.5);
       height: 88%;
       border-radius: 1%;
@@ -32,8 +31,9 @@
       @media(max-width:992px){
         .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
           margin-top: 0;
+          max-width: 70%;
         }
         .titulo{
-          font-size: 10px;
+          font-size: 18px;
         }
       }

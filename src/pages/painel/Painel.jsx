@@ -8,12 +8,10 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
     ];
 
@@ -21,22 +19,18 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
           {
             img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
             title: 'Camera',
-            author: '@helloimnik',
           },
           {
             img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
             title: 'Coffee',
-            author: '@nolanissac',
           },
     ];
 
@@ -44,12 +38,10 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
     ];
 
@@ -57,22 +49,18 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
           {
             img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
             title: 'Camera',
-            author: '@helloimnik',
           },
           {
             img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
             title: 'Coffee',
-            author: '@nolanissac',
           },
     ];
 
@@ -84,17 +72,14 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
           {
             img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
             title: 'Camera',
-            author: '@helloimnik',
           },
     ];
 
@@ -102,33 +87,29 @@ export default function Painel() {
         {
             img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
             title: 'Breakfast',
-            author: '@bkristastucchio',
           },
           {
             img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
             title: 'Burger',
-            author: '@rollelflex_graphy726',
           },
           {
             img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
             title: 'Camera',
-            author: '@helloimnik',
           },
           {
             img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
             title: 'Coffee',
-            author: '@nolanissac',
           },
     ];
 
     const andares = [
         { title: "Mezanino", items: mezzaninoItems },
-        { title: "Primeiro Andar", items: primeiroAndarItems },
-        { title: "Segundo Andar", items: segundoAndarItems },
-        { title: "Terceiro Andar", items: terceiroAndarItems },
-        { title: "Quarto Andar", items: quartoAndarItems },
-        { title: "Quinto Andar", items: quintoAndarItems },
-        { title: "Sexto Andar", items: sextoAndarItems },
+        { title: "1º Andar", items: primeiroAndarItems },
+        { title: "2º Andar", items: segundoAndarItems },
+        { title: "3º Andar", items: terceiroAndarItems },
+        { title: "4º Andar", items: quartoAndarItems },
+        { title: "5º Andar", items: quintoAndarItems },
+        { title: "6º Andar", items: sextoAndarItems },
       ];
 
       return (

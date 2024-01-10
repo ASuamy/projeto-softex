@@ -6,8 +6,8 @@ import InputAdornment from "@mui/material/InputAdornment";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { NavLink } from "react-router-dom";
-import LogoLogin_softex from '../../components/logosLogin/Logo_softex';
-import LogoLogin_itbc from '../../components/logosLogin/Logo_itbc';
+import LogoLogin_softex from "../../components/logosLogin/Logo_softex";
+import LogoLogin_itbc from "../../components/logosLogin/Logo_itbc";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -37,6 +37,7 @@ const Login = () => {
           ) : (
             <form onSubmit={handleLogin}>
               <CustomInput
+                style={{ width: "100%" }}
                 type="text"
                 label="Usuário"
                 variant="standard"
@@ -51,6 +52,7 @@ const Login = () => {
                 }}
               />
               <CustomInput
+                style={{ width: "100%" }}
                 type="password"
                 label="Senha"
                 variant="standard"
@@ -67,7 +69,7 @@ const Login = () => {
               <br />
               <p className="text">Esqueceu senha?</p>
               <br />
-              <NavLink to="/Home">
+              <NavLink to="/Home" className='button'>
                 <ButtonSalve type="submit" text="Entrar" href="/Home" />
               </NavLink>
             </form>
