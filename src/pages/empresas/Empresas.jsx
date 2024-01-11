@@ -31,22 +31,22 @@ const customColumns = [
     field: "id",
     headerName: "CNPJ",
     type: "number",
-    width: 160,
+    flex: 1.7,
     valueFormatter: (params) => formatarCNPJ(params.value.toString()),
   },
-  { field: "fullName", headerName: "Razão Social", width: 250 },
-  { field: "fantasyName", headerName: "Nome Fantasia", width: 230 },
+  { field: "fullName", headerName: "Razão Social", flex: 2 },
+  { field: "fantasyName", headerName: "Nome Fantasia", flex: 2 },
   {
     field: "celNumber",
     headerName: "Contato",
     type: "number",
-    width: 170,
+   flex: 1.5,
     valueFormatter: (params) => formatarTelefone(params.value.toString()),
   },
   {
     field: "edit",
     headerName: "",
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton
@@ -61,7 +61,7 @@ const customColumns = [
   {
     field: "delete",
     headerName: "",
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton
@@ -78,32 +78,32 @@ const customColumns = [
 const customRows = [
   {
     id: 12345678901234,
-    fullName: "Silvana Paiva",
-    fantasyName: "Teste1",
+    fullName: "BR Voice xxxxx",
+    fantasyName: "Br Voice",
     celNumber: 8112345678,
   },
   {
     id: 87654321930899,
-    fullName: "João Silva",
-    fantasyName: "Teste1",
+    fullName: "Softex Pernambuco",
+    fantasyName: "Softex",
     celNumber: 8212354378,
   },
   {
     id: 87654350621891,
-    fullName: "João Silva",
-    fantasyName: "Teste2",
+    fullName: "LanLink xxxxxxxxxxxxxxx",
+    fantasyName: "LanLink",
     celNumber: 8112345578,
   },
   {
     id: 97654302521899,
-    fullName: "João Silva",
-    fantasyName: "Teste3",
+    fullName: "di2win xxxxxxxxxxxxxx",
+    fantasyName: "di2win",
     celNumber: 8112325678,
   },
   {
     id: 89654304921899,
-    fullName: "João Silva",
-    fantasyName: "Teste4",
+    fullName: "Avantia xxxxxxx",
+    fantasyName: "Avantia",
     celNumber: 8112348678,
   },
   // Adicione mais usuários conforme necessário

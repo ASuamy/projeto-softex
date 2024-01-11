@@ -17,15 +17,15 @@ const handleDelete = (id) => {
 };
 
 const customColumns = [
-  { field: "id", headerName: "Título", width: 150 },
-  { field: "description", headerName: "Descrição", width: 260 },
-  { field: "tm", headerName: "TM", width: 120 },
-  { field: "start", headerName: "Período Inicial", width: 140 },
-  { field: "finale", headerName: "Período Final", width: 140 },
+  { field: "id", headerName: "Título", flex: 2},
+  { field: "description", headerName: "Descrição", flex: 2.5 },
+  { field: "tm", headerName: "TM", flex: 1 },
+  { field: "start", headerName: "Período Inicial", flex: 1.5 },
+  { field: "finale", headerName: "Período Final", flex: 1.5 },
   {
     field: "edit",
     headerName: "",
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton
@@ -40,7 +40,7 @@ const customColumns = [
   {
     field: "delete",
     headerName: "",
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton

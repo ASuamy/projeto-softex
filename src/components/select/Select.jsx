@@ -1,34 +1,31 @@
-import * as React from 'react';
-import TextField from '@mui/material/TextField';
+import React, { useState } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
+import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 
-export default function Select({label}) {
-  const andar = [
-    { value: 0, label: 'Mezanino', Salas:[]},
-    { value: 1, label: '1º andar', Salas:[101,102,103] }
-    ]
-
+export default function Select({ label, options }) {
   const defaultProps = {
-    options: andar,
+    options: options,
     getOptionLabel: (option) => option.label,
   };
-  
-  const [value, setValue] = React.useState(null);
 
-  const handleChange = (event) => {
-    setValue(event.target.value);
-  }
+  const [value, setValue] = useState(null);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <Stack spacing={1} sx={{ margin:"10px", marginLeft:'15%', width: '70%'}}>
+    <Stack spacing={1} sx={{ margin: '10px', marginLeft: '15%', width: '70%' }}>
       <Autocomplete
         {...defaultProps}
         id="auto-complete"
         autoComplete
         includeInputInList
+        value={value}
+        onChange={handleChange}
         renderInput={(params) => (
-          <TextField {...params} label={label} valeu={value} variant="outlined" onChange={handleChange} />
-          
+          <TextField {...params} label={label} variant="outlined" />
         )}
       />
     </Stack>
