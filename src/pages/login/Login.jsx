@@ -27,17 +27,21 @@ const Login = () => {
   return (
     <div className="container">
       <div className="div-container">
-        <div className="imagem">
+        <div className="imagem">  
+        <div className="imagem1">
           <LogoLogin_softex />
+        </div>
+        <div className="imagem2">
           <LogoLogin_itbc />
         </div>
+        </div>
+
         <div className="form-container">
           {loggedIn ? (
             <h1>Usuário logado com sucesso!</h1>
           ) : (
             <form onSubmit={handleLogin}>
-              <CustomInput
-                style={{ width: "100%" }}
+              <CustomInput 
                 type="text"
                 label="Usuário"
                 variant="standard"
@@ -69,8 +73,8 @@ const Login = () => {
               <br />
               <p className="text">Esqueceu senha?</p>
               <br />
-              <NavLink to="/Home" className='button'>
-                <ButtonSalve type="submit" text="Entrar" href="/Home" />
+              <NavLink to="/Home">
+                <ButtonSalve type="submit" text="Entrar"   href="/Home" />
               </NavLink>
             </form>
           )}

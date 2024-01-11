@@ -1,8 +1,8 @@
 .telas {
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-around;*/
     padding-top: 10%;
-    height: 90vh;
+    justify-content: space-evenly; /*coloca espaçamento igual entre os cards*/
 }
 
  .telas a{
@@ -26,8 +26,6 @@
         margin-top: auto;
         align-items: center;
         display: fixed;
-        
-        
     }
 
 }

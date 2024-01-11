@@ -14,6 +14,7 @@ import {
   CardMedia,
 } from "@mui/material";
 import "../Styles/stylesPages.css";
+import imagem1 from '../../imagens/laranja3.png'
 
 export default function TipoTela() {
   return (
@@ -30,13 +31,16 @@ export default function TipoTela() {
                 <CardMedia
                   component='img'
                   height='140'
-                  image='https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                  image= {imagem1}
                   alt='unsplash image'
                 />
                 <CardContent>
                   <Typography gutterBottom variant='h5' component='div'>
                     Recepção
                   </Typography>
+                  <p>
+                      Exibe as empresas que estão alocadas no condomínio. E as suas respectivas salas.
+                    </p>
                 </CardContent>
                 <CardActions>
                   <Button size='small'>
@@ -57,13 +61,16 @@ export default function TipoTela() {
                 <CardMedia
                   component="img"
                   height="140"
-                  image="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  image={imagem1}
                   alt="unsplash image"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Torre
                   </Typography>
+                  <p>
+                    Exibe informativos.
+                  </p>
                 </CardContent>
                 <CardActions>
                   <Button size="small">

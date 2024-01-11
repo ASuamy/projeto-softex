@@ -24,17 +24,17 @@ const handleDelete = (id) => {
 
 const customColumns = [
   {
-    field: 'id', headerName: 'CPF', type: 'number', width: 140,
+    field: 'id', headerName: 'CPF', type: 'number', flex: 1,
     valueFormatter: (params) => formatarCPF(params.value.toString())
   },
-  { field: 'fullName', headerName: 'Nome Completo', width: 250 },
-  { field: 'email', headerName: 'E-mail', width: 200 },
-  { field: 'tp', headerName: 'TP', width: 80 },
-  { field: 'userName', headerName: 'Usuário', width: 140 },
+  { field: 'fullName', headerName: 'Nome Completo', flex: 1.5 },
+  { field: 'email', headerName: 'E-mail', flex: 1.5 },
+  { field: 'tp', headerName: 'TP',flex: 0.5 },
+  { field: 'userName', headerName: 'Usuário', flex: 0.8 },
   {
     field: 'edit',
     headerName: '',
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton 
@@ -49,7 +49,7 @@ const customColumns = [
   {
     field: 'delete',
     headerName: '',
-    width: 50,
+    flex: 0.5,
     sortable: false,
     renderCell: (params) => (
       <IconButton 
@@ -64,11 +64,13 @@ const customColumns = [
 ];
 
 const customRows = [
-  { id: 12345678900, fullName: 'Silvana Paiva', email: 'sil@gmail.com', tp: 'ADM', userName: 'silpaiva' },
-  { id: 87654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-  { id: 87654321891, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-  { id: 97654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
-  { id: 89654321899, fullName: 'João Silva', email: 'joao@gmail.com', tp: 'USR', userName: 'joaosilva' },
+  { id: 12345678900, fullName: 'Usuário de Teste 01', email: 'xxxxxx@gmail.com', tp: 'ADM', userName: 'usuario01' },
+  { id: 87654321899, fullName: 'Usuário de Teste 02', email: 'xxxxx@hotmail.com', tp: 'ADM', userName: 'usuario02' },
+  { id: 87654321891, fullName: 'Usuário de Teste 03', email: 'xxxxxxx@uol.com.br', tp: 'USR', userName: 'usuario03' },
+  { id: 97654321899, fullName: 'Usuário de Teste 04', email: 'xxxxxx@globo.com', tp: 'USR', userName: 'usuario04' },
+  { id: 89654321899, fullName: 'Usuário de Teste 05', email: 'xxxxxxx@ig.com.br', tp: 'USR', userName: 'usuario05' },
+  { id: 89654321849, fullName: 'Usuário de Teste 06', email: 'xxxxxxx@gmail.com', tp: 'USR', userName: 'usuario06' },
+  { id: 89654321869, fullName: 'Usuário de Teste 07', email: 'xxxxxxx@globo.com', tp: 'USR', userName: 'usuario07' },
   // Adicione mais usuários conforme necessário
   // Preencha com os dados necessários do banco de dados
 ];

@@ -2,103 +2,137 @@ import * as React from 'react';
 import { Grid } from '@mui/material';
 import FloorTab from '../../components/tabelaAndar/tabelaAndar';
 import './Painel.css';
+import imagem1 from '../../imagens/testeTela/di2win.png';
+import imagem2 from '../../imagens/logos/LogoSoftex.png';
+import imagem3 from '../../imagens/testeTela/unibta_digital_logo.png'
+import imagem4 from '../../imagens/testeTela/brvoice.png'
+import imagem5 from '../../imagens/testeTela/LogoLanlink.png'
+import imagem6 from '../../imagens/testeTela/logo-mobilicidade.png'
+import imagem7 from '../../imagens/testeTela/logo-In-Forma.png'
+import imagem8 from '../../imagens/testeTela/LogoAvantia.png'
+import imagem9 from '../../imagens/testeTela/tributus.jpeg'
+import imagem10 from '../../imagens/testeTela/logo-nox-vert.png'
+import imagem11 from '../../imagens/testeTela/facilit.png'
+import imagem12 from '../../imagens/testeTela/GW-sistemas-logo.jpeg'
+import imagem13 from '../../imagens/testeTela/iLand_logo.png'
+import imagem14 from '../../imagens/testeTela/consenso.png'
+import imagem15 from '../../imagens/testeTela/spacemidia.jpeg'
+import imagem16 from '../../imagens/testeTela/elogica_logo.png'
 
 export default function Painel() {
     const mezzaninoItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
-          },
-          {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem3,
+            title: 'UniBTA',
+            author: '003',
           },
     ];
 
     const primeiroAndarItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            img: imagem4,
+            title: 'BR Voice',
+            author: '101',
           },
           {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem2,
+            title: 'Softex PE',
+            author: '102',
           },
           {
-            img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-            title: 'Camera',
+            img: imagem2,
+            title: 'Softex PE',
+            author: '106',
           },
           {
-            img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-            title: 'Coffee',
+            img: imagem5,
+            title: 'LanLink',
+            author: '109',
           },
     ];
 
     const segundoAndarItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            img: imagem1,
+            title: 'di2win',
+            author: '206',
           },
           {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem6,
+            title: 'Mobilcidade',
+            author: '207',
           },
     ];
 
     const terceiroAndarItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            img: imagem2,
+            title: 'Softex PE',
+            author: '301',
           },
           {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem7,
+            title: 'In Forma',
+            author: '302',
           },
           {
-            img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-            title: 'Camera',
-          },
-          {
-            img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-            title: 'Coffee',
+            img: imagem8,
+            title: 'Avantia',
+            author: '305',
           },
     ];
 
     const quartoAndarItems = [
-
+      {
+        img: imagem9,
+        title: 'Tributus',
+        author: '402',
+      },
+      {
+        img: imagem2,
+        title: 'Softex PE',
+        author: '404',
+      },
     ];
 
     const quintoAndarItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            img: imagem10,
+            title: 'Noxtec',
+            author: '501',
           },
           {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem11,
+            title: 'Facilit',
+            author: '502',
           },
           {
-            img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-            title: 'Camera',
+            img: imagem12,
+            title: 'GW Sistemas',
+            author: '505',
           },
     ];
 
     const sextoAndarItems = [
         {
-            img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-            title: 'Breakfast',
+            img: imagem13,
+            title: 'iLand+',
+            author: '601',
           },
           {
-            img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-            title: 'Burger',
+            img: imagem14,
+            title: 'Consenso',
+            author: '603',
           },
           {
-            img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-            title: 'Camera',
+            img: imagem15,
+            title: 'Space Midia',
+            author: '605',
           },
           {
-            img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-            title: 'Coffee',
+            img: imagem16,
+            title: 'Elógica',
+            author: '@606',
           },
     ];
 

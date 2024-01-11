@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import imagem1 from '../../imagens/teste/Teste1.png';
-import imagem2 from '../../imagens/teste/Teste2.png';
-import imagem3 from '../../imagens/teste/Teste3.png';
-import imagem4 from '../../imagens/teste/Teste4.png';
-import imagem5 from '../../imagens/teste/Teste5.png';
+import imagem1 from '../../imagens/testeCarousel/Teste1.png';
+import imagem2 from '../../imagens/testeCarousel/Teste2.png';
+import imagem3 from '../../imagens/testeCarousel/Teste3.png';
+import imagem4 from '../../imagens/testeCarousel/Teste4.png';
+import imagem5 from '../../imagens/testeCarousel/Teste5.png';
 import './carousel.css';
 
 const Carousel = () => {
@@ -21,7 +21,7 @@ const Carousel = () => {
     const timer = setInterval(() => {
       const nextImage = (currentImage + 1) % images.length;
       setCurrentImage(nextImage);
-    }, 5000); // Altera a cada 5 segundos (5000ms)
+    }, 3000); // Altera a cada 3 segundos (3000ms)
 
     return () => clearInterval(timer);
   }, [currentImage, images.length]);

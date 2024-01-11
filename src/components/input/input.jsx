@@ -10,7 +10,7 @@ export default function CustomInput(props) {
     <Box
       component="form"
       sx={{
-        '& > :not(style)': {marginTop:"1em", width: '60%' },
+        '& > :not(style)': {marginTop:"1em" },
       }}
       noValidate
       autoComplete="off"
