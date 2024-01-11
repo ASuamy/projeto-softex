@@ -37,6 +37,9 @@ export default function TipoTela() {
                   <Typography gutterBottom variant='h5' component='div'>
                     Recepção
                   </Typography>
+                  <p>
+                      Exibe as empresas que estão alocadas no condomínio. E as suas respectivas salas.
+                    </p>
                 </CardContent>
                 <CardActions>
                   <Button size='small'>
@@ -64,6 +67,9 @@ export default function TipoTela() {
                   <Typography gutterBottom variant="h5" component="div">
                     Torre
                   </Typography>
+                  <p>
+                    Exibe informativos.
+                  </p>
                 </CardContent>
                 <CardActions>
                   <Button size="small">

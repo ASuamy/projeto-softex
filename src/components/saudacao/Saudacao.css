@@ -1,13 +1,15 @@
 .saudacao{
     background-image: url(../../imagens/saudacao/Design.svg);
-    background-position:80%;
-    background-repeat: no-repeat; 
+    background-position:85%;
+    background-repeat: no-repeat;  
 }
 
-.title{
-    font-size: 100px;
-    margin-left: 10%;
-    font-family: 'Poppins', sans-serif;
+.username{
+    font-size: 90px;
+    margin-left: 20%;
+    font-weight: bold;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-family: 'Georama', sans-serif;
     text-transform: uppercase;
     background: linear-gradient(45deg,#f56a19,#d78250,#a33d02, #FC5E05);
     background-size: 400% 100%;
@@ -15,8 +17,19 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 50%;
+    margin-top: 1rem;
+
+
+}
+.title{
+    font-size: 90px;
+    margin-left: 20%;
+    font-weight: 600;
     margin-top: 8rem;
 
+
+    color: black;
+    
 }
 
 

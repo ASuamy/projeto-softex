@@ -3,7 +3,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 91vh;
+   /* height: 91vh;*/
+   min-height: 80vh;
     margin: 0;
   }
   
@@ -28,6 +29,7 @@
   
   .tabela-usuario, .tabela-salas, .tabela-midia,.tabela-empresa {
     padding: 5px;
+    width: 100%;
   }
   .geral-salas {
     display: flex;

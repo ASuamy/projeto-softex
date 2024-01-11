@@ -12,7 +12,7 @@ const Home = () => {
         <Navbar />
       </div>
 
-      <section className="hidden">
+      <section className="home">
       <div className="saudacao">
         <Saudacao />
       </div>
