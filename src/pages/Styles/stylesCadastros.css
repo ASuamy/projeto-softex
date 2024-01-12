@@ -11,7 +11,7 @@
   .cad-usuario-container,.cad-salas-container, .cad-midia-container, .cad-empresa-container  {
       display: flex;
       flex-direction: column;
-      text-align: start;
+      text-align: center;
       align-items: center;
       font-family: 'Georama', sans-serif;
       

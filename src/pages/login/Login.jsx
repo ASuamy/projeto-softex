@@ -9,6 +9,7 @@ import { NavLink } from "react-router-dom";
 import LogoLogin_softex from "../../components/logosLogin/Logo_softex";
 import LogoLogin_itbc from "../../components/logosLogin/Logo_itbc";
 import Title from '../../components/Texts/Title/Title'
+import Linha from '../../imagens/Line1.svg'
 
 const Login = () => {
   const [username, setUsername] = useState("");

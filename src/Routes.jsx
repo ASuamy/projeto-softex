@@ -31,7 +31,7 @@ function Rotas() {
         <Route path="/telas" element={<TipoTela />} />
         <Route path="/telas/tvTorre" element={<Carousel />} />
         <Route path="/telas/tvRecepcao" element={<Painel />} />
-        <Route path="/homeOperador" element={<HomeOperador/>} />
+        <Route path="/homeOperador" element={<HomeOperador />} />
 
 
       </Routes>
