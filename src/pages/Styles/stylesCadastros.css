@@ -18,6 +18,7 @@
     
     .cad-dados-usuario, .cad-dados-salas, .cad-dados-midia,  .cad-dados-empresa  {    
       width: 60%;
+      margin-top: 10px;
       background-color: RGBA(217, 217, 217, 0.5);
       height: 80%;
       border-radius: 1%;

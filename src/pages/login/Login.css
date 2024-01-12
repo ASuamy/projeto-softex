@@ -16,6 +16,7 @@
 
 .imagem1, .imagem2{
   margin-bottom: 15%;
+  
 }
 
 
@@ -34,7 +35,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ;
   padding-top: 15%;
 }
 
@@ -43,6 +43,16 @@
   font-size: small;
   padding-top: 1%;
   
+}
+
+.text{
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 54%;
+}
+
+.linha {
+  margin-top: 50px;
 }
 
 /* Adicione media queries para tornar o layout responsivo */

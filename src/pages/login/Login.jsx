@@ -8,6 +8,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { NavLink } from "react-router-dom";
 import LogoLogin_softex from '../../components/logosLogin/Logo_softex';
 import LogoLogin_itbc from '../../components/logosLogin/Logo_itbc';
+import Linha from '../../imagens/Line 1.svg'
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -34,6 +35,10 @@ const Login = () => {
         <div className="imagem2">
           <LogoLogin_itbc />
         </div>
+        </div>
+
+        <div className="linha">
+          <img src={ Linha }/>
         </div>
 
         <div className="form-container">
@@ -70,7 +75,7 @@ const Login = () => {
                 }}
               />
               <br />
-              <p className="text">Esqueceu senha?</p>
+              <p className="text">Esqueceu a senha?</p>
               <br />
               <NavLink to="/Home">
                 <ButtonSalve type="submit" text="Entrar"   href="/Home" />
