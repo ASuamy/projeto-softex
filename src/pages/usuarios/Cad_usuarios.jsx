@@ -21,9 +21,6 @@ function Cad_usuarios() {
 
     <div className="cad-usuario">
       <div className="cad-usuario-container">
-        <header>
-          <Title text="Cadastro de Usuários" />
-        </header>
         <div className="cad-dados-usuario">
           <div>
             <form>

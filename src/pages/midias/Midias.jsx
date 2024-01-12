@@ -103,7 +103,6 @@ function Midias() {
 
       <div className="midia">
       <div className="midia-container">
-        <Title text="Mídias" />
         <div className="dados-midia">
         <CustomButton className="buttonAdd">
                 <NavLink to="/midias/cadastromidias" className='buttonAdd'>

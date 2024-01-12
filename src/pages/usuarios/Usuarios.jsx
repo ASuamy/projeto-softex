@@ -86,7 +86,6 @@ function Usuarios() {
 
       <div className='usuarios'>
         <div className="usuarios-container">
-          <Title text="Usuários"/>
           <div className="dados-usuario">
                 <CustomButton className="buttonAdd">
                 <NavLink to="/usuarios/cadastrousuarios" className='buttonAdd'>

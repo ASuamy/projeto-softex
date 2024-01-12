@@ -118,7 +118,6 @@ function Empresas() {
       </div>
       <div className="empresa">
       <div className="empresa-container">
-        <Title text="Empresas" />
         <div className="dados-empresa">
         <CustomButton className="buttonAdd">
                 <NavLink to="/empresas/cadastroempresas" className='buttonAdd'>

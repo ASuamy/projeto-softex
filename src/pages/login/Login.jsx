@@ -6,9 +6,9 @@ import InputAdornment from "@mui/material/InputAdornment";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import { NavLink } from "react-router-dom";
-import LogoLogin_softex from '../../components/logosLogin/Logo_softex';
-import LogoLogin_itbc from '../../components/logosLogin/Logo_itbc';
-import Linha from '../../imagens/Line 1.svg'
+import LogoLogin_softex from "../../components/logosLogin/Logo_softex";
+import LogoLogin_itbc from "../../components/logosLogin/Logo_itbc";
+import Title from '../../components/Texts/Title/Title'
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -28,13 +28,13 @@ const Login = () => {
   return (
     <div className="container">
       <div className="div-container">
-        <div className="imagem">  
-        <div className="imagem1">
-          <LogoLogin_softex />
-        </div>
-        <div className="imagem2">
-          <LogoLogin_itbc />
-        </div>
+        <div className="imagem">
+          <div className="imagem1">
+            <LogoLogin_softex />
+          </div>
+          <div className="imagem2">
+            <LogoLogin_itbc />
+          </div>
         </div>
 
         <div className="linha">
@@ -46,7 +46,11 @@ const Login = () => {
             <h1>Usuário logado com sucesso!</h1>
           ) : (
             <form onSubmit={handleLogin}>
-              <CustomInput 
+              <div>
+                <Title  text='Login'/>
+              </div>
+              <CustomInput
+                style={{ width: "100%" }}
                 type="text"
                 label="Usuário"
                 variant="standard"
@@ -61,6 +65,7 @@ const Login = () => {
                 }}
               />
               <CustomInput
+                style={{ width: "100%" }}
                 type="password"
                 label="Senha"
                 variant="standard"
@@ -77,8 +82,8 @@ const Login = () => {
               <br />
               <p className="text">Esqueceu a senha?</p>
               <br />
-              <NavLink to="/Home">
-                <ButtonSalve type="submit" text="Entrar"   href="/Home" />
+              <NavLink to="/Home" className="buttonLogin">
+                <ButtonSalve type="submit" text="Entrar" />
               </NavLink>
             </form>
           )}

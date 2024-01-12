@@ -6,26 +6,21 @@
 
 .username{
     font-size: 90px;
-    margin-left: 20%;
-    font-weight: bold;
     /*font-family: 'Poppins', sans-serif;*/
     font-family: 'Georama', sans-serif;
-    text-transform: uppercase;
     background: linear-gradient(45deg,#f56a19,#d78250,#a33d02, #FC5E05);
     background-size: 400% 100%;
     animation: degrade 10s linear infinite ;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 50%;
-    margin-top: 1rem;
+    margin: 0px 200px;
 
 
 }
 .title{
     font-size: 90px;
-    margin-left: 20%;
-    font-weight: 600;
-    margin-top: 8rem;
+    margin: 150px 0px 0px 200px;
+
 
 
     color: black;
@@ -50,8 +45,8 @@
          background-image: none;
         
     }
-    .title{
-        width: 90%;
+    .title, .userName{
+        width: 50%;
     }
 
    

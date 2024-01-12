@@ -20,9 +20,6 @@ function Cad_midias() {
 
     <div className="cad-midia">
       <div className="cad-midia-container">
-        <header>
-          <Title text="Cadastro de Mídias" />
-        </header>
         <div className="cad-dados-midia">
           <div>
             <form>

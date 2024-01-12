@@ -27,6 +27,12 @@ export default function Painel() {
             author: '003',
           },
     ];
+    const mezzaninoSalas = [
+      {
+          author: '003',
+        },
+  ];
+
 
     const primeiroAndarItems = [
         {
@@ -132,28 +138,32 @@ export default function Painel() {
           {
             img: imagem16,
             title: 'Elógica',
-            author: '@606',
+            author: '606',
           },
     ];
 
     const andares = [
-        { title: "Mezanino", items: mezzaninoItems },
-        { title: "Primeiro Andar", items: primeiroAndarItems },
-        { title: "Segundo Andar", items: segundoAndarItems },
-        { title: "Terceiro Andar", items: terceiroAndarItems },
-        { title: "Quarto Andar", items: quartoAndarItems },
-        { title: "Quinto Andar", items: quintoAndarItems },
-        { title: "Sexto Andar", items: sextoAndarItems },
+        { title: "Mezanino", items: mezzaninoItems, salas: mezzaninoSalas },
+        { title: "1º Andar", items: primeiroAndarItems },
+        { title: "2º Andar", items: segundoAndarItems },
+        { title: "3º Andar", items: terceiroAndarItems },
+        { title: "4º Andar", items: quartoAndarItems },
+        { title: "5º Andar", items: quintoAndarItems },
+        { title: "6º Andar", items: sextoAndarItems },
       ];
 
       return (
+        <>
+        <div className='geral'>
         <Grid container spacing={1} className='painelRecepcao'>
         {andares.map((andar, index) => (
           <Grid key={index} item xs={12} sm={6} md={4} lg={1.6} xl={1}>
-            <FloorTab title={andar.title} items={andar.items} />
+            <FloorTab title={andar.title} items={andar.items} salas={andar.salas} />
           </Grid>
         ))}
       </Grid>
+      </div>
+      </>
       );
     }
 
