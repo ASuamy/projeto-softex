@@ -1,6 +1,5 @@
 import React from "react";
 import ButtonSalve from "../../components/buttonsalve/ButtonSalve";
-import Title from "../../components/Texts/Title/Title";
 import CustomInput from "../../components/input/input";
 import "../Styles/stylesCadastros.css";
 import Navbar from "../../components/navbar/Navbar";
@@ -14,9 +13,6 @@ export default function Cad_salas() {
       </div>
       <div className="cad-sala">
       <div className="cad-salas-container">
-        <header>
-          <Title text="Cadastro de Salas" />
-        </header>
         <div className="cad-dados-salas">
           <div>
             <form>

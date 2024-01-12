@@ -5,12 +5,11 @@
 nav {
     font-family: 'Georama', sans-serif;
     font-weight: 500;
-    font-size: ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    background-color: #ffffff;
+    ;
     position: sticky; /*deixa a navbar fixa*/
     top: 0; /*onde vai ficar fixa*/
     opacity: 0.9;

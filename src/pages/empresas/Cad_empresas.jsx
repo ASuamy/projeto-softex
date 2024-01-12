@@ -16,9 +16,6 @@ export default function Cad_empresas() {
 
         <div className="cad-empresa">
         <div className="cad-empresa-container">
-          <header>
-            <Title text="Cadastro de Empresas" />
-          </header>
           <div className="cad-dados-empresa">
             <div>
               <form>

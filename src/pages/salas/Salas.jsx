@@ -90,7 +90,6 @@ function Salas() {
       
       <div className="salas">
       <div className="salas-container">
-        <Title text="Salas" />
         <div className="dados-salas">
         <CustomButton >
                 <NavLink to="/salas/cadastrosalas" className='buttonAdd'>

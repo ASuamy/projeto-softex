@@ -1,5 +1,6 @@
 .painelRecepcao {
-    justify-content: space-around;
     height: 100vh;
+    gap: 90px;
+    padding: 20px 10px 15px 10px;
     
 }

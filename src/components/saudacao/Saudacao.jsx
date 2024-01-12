@@ -2,7 +2,7 @@ import "./Saudacao.css";
 
 
 const Saudacao = ({userName}) => {
-  userName = "Carol";
+  userName = "Carolaine";
   return (
     <>
     <div className="saudacao"></div>

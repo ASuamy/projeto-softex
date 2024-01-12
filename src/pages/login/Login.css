@@ -33,7 +33,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ;
   padding-top: 15%;
 }
 
@@ -42,6 +41,9 @@
   font-size: small;
   padding-top: 1%;
   
+}
+.buttonLogin{
+  text-decoration: none;
 }
 
 /* Adicione media queries para tornar o layout responsivo */
